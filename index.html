@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LUNAR EXPLORER · Team DexLab · NASA Space Apps 2026</title>
-<meta name="description" content="Where, and when, to land at the Moon's south pole. An interactive planner built on NASA data: real terrain horizons, hour-by-hour Sun and Earth visibility, a go/review decision and a live check against NASA maps. Team DexLab · NASA Space Apps 2026.">
+<title>LUNAR EXPLORER · Team DexLab 1 · NASA Space Apps 2026</title>
+<meta name="description" content="Where, and when, to land at the Moon's south pole. An interactive planner built on NASA data: real terrain horizons, hour-by-hour Sun and Earth visibility, a go/review decision and a live check against NASA maps. Team DexLab 1 · NASA Space Apps 2026.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LUNAR EXPLORER · Lunar mission site planner">
-<meta property="og:description" content="Where, and when, to land at the Moon's south pole. Built on NASA LOLA and JPL Horizons data. Team DexLab · NASA Space Apps 2026.">
+<meta property="og:description" content="Where, and when, to land at the Moon's south pole. Built on NASA LOLA and JPL Horizons data. Team DexLab 1 · NASA Space Apps 2026.">
 <meta property="og:image" content="https://basilsltan62-del.github.io/lunar-explorer/preview.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:url" content="https://basilsltan62-del.github.io/lunar-explorer/">
@@ -64,6 +64,7 @@ html[lang=ar] .btn{font-family:Plex}
 .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
 .btns .btn{margin-top:0;flex:1}
 .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(0deg,#0008,#0000 60%);border:0;cursor:pointer;width:100%}
+.yt img{width:100%;height:100%;object-fit:cover}.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .play span{width:74px;height:74px;border-radius:50%;background:var(--y);color:var(--navy);font-size:30px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px #ffca3c33}
 .rl{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:6px}
 .rl a{color:#dfe8fa;text-decoration:none;display:flex;gap:10px;align-items:center;padding:8px 12px;border:1px solid #ffffff14;border-radius:10px;background:#ffffff06}
@@ -99,7 +100,7 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 </head>
 <body>
 <header><div class="wrap"><img src="assets/logo.png" alt="DexLab"><span class="nm">LUNAR EXPLORER</span>
-<nav><a href="#start"><span class="L-en">Start</span><span class="L-ar">ابدأ</span></a><a href="#film"><span class="L-en">Film</span><span class="L-ar">الفيلم</span></a><a href="#resources"><span class="L-en">Resources</span><span class="L-ar">الموارد</span></a></nav>
+<nav><a href="#start"><span class="L-en">Start</span><span class="L-ar">ابدأ</span></a><a href="#film"><span class="L-en">Video</span><span class="L-ar">الفيديو</span></a><a href="#resources"><span class="L-en">Resources</span><span class="L-ar">الموارد</span></a></nav>
 <div class="lg"><button data-l="en">EN</button><button data-l="ar">ع</button></div></div></header>
 
 <div class="hero"><div class="wrap">
@@ -107,29 +108,30 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 <h1>LUNAR EXPLORER</h1>
 <p class="tag"><span class="L-en">Where, and when, to land at the Moon’s south pole.</span><span class="L-ar">أين ومتى نهبط عند القطب الجنوبي للقمر.</span></p>
 <p class="lead"><span class="L-en">An interactive planner built on NASA data. For any point and any date it computes the real terrain horizon, tracks the Sun and Earth hour by hour, turns them into a clear decision, and checks itself live against NASA’s published maps.</span><span class="L-ar">أداة تخطيط تفاعلية مبنية على بيانات ناسا. لأي نقطة وأي تاريخ تحسب الأفق الحقيقي من التضاريس، وترصد الشمس والأرض ساعة بساعة، وتحوّل ذلك إلى قرار واضح، وتختبر نفسها حياً مقابل خرائط ناسا المنشورة.</span></p>
-<div class="team"><b><span class="L-en">Team DexLab</span><span class="L-ar">فريق DexLab</span></b> · <span class="L-en">Jazan, Saudi Arabia</span><span class="L-ar">جازان، المملكة العربية السعودية</span></div>
+<div class="team"><b><span class="L-en">Team DexLab 1</span><span class="L-ar">فريق DexLab 1</span></b> · <span class="L-en">Jazan, Saudi Arabia · team 25</span><span class="L-ar">جازان، المملكة العربية السعودية · الفريق 25</span></div>
 
 <div class="cards" id="start">
  <div class="card"><a class="vis" data-href="app/"><img class="L-en" src="assets/tool_en.jpg" alt="LUNAR EXPLORER tool"><img class="L-ar" src="assets/tool_ar.jpg" alt="أداة LUNAR EXPLORER"></a>
   <div class="bd"><h2><span class="L-en">1 · Open the tool</span><span class="L-ar">1 · افتح الأداة</span></h2>
   <p><span class="L-en">Pick a site and a date, read the decision board, ask for a better date, plan a rover route, run the live check against NASA.</span><span class="L-ar">اختر موقعاً وتاريخاً، واقرأ لوحة القرار، واطلب تاريخاً أفضل، وخطّط طريق العربة، وشغّل التحقق الحي مقابل ناسا.</span></p>
   <p class="sm"><span class="L-en">Desktop or phone · works offline · about 17 MB, a few seconds to load</span><span class="L-ar">حاسوب أو هاتف · تعمل بلا إنترنت · نحو 17 ميغابايت، تحتاج بضع ثوانٍ لتفتح</span></p>
-  <a class="btn" data-href="app/">▶ <span class="L-en">Open the tool</span><span class="L-ar">افتح الأداة</span></a></div></div>
+  <div class="btns"><a class="btn" data-href="app/">▶ <span class="L-en">Open the tool</span><span class="L-ar">افتح الأداة</span></a><a class="btn ghost" data-href="app/" data-q="demo=1">🎯 <span class="L-en">Guided demo</span><span class="L-ar">عرض موجّه</span></a></div></div></div>
 
- <div class="card" id="film"><div class="vis"><video id="fv" playsinline controls preload="none" poster="assets/poster_en.jpg"></video><button class="play" id="pl" aria-label="Play"><span>▶</span></button></div>
-  <div class="bd"><h2><span class="L-en">2 · Watch the 30-second film</span><span class="L-ar">2 · شاهد فيلم 30 ثانية</span></h2>
-  <p><span class="L-en">The problem, the tool in action, the NASA data and the impact, in 30 seconds. Captioned, no sound.</span><span class="L-ar">المشكلة، والأداة أثناء العمل، وبيانات ناسا، والأثر، في 30 ثانية. بترجمة مطبوعة وبلا صوت.</span></p>
-  <div class="btns"><a class="btn ghost" data-href="presentation.html">🎞 <span class="L-en">Full presentation</span><span class="L-ar">العرض الكامل</span></a><a class="btn ghost" id="dl" href="film/LUNAR_EXPLORER_30s_EN.mp4" download>⬇ MP4</a></div></div></div>
+ <div class="card" id="film"><div class="vis yt"><img id="ytimg" alt=""><iframe id="ytf" title="LUNAR EXPLORER video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen hidden></iframe><button class="play" id="pl" aria-label="Play"><span>▶</span></button></div>
+  <div class="bd"><h2><span class="L-en">2 · Watch the video</span><span class="L-ar">2 · شاهد الفيديو</span></h2>
+  <p><span class="L-en">The problem, the tool in action, the NASA data and the impact.</span><span class="L-ar">المشكلة، والأداة أثناء العمل، وبيانات ناسا، والأثر.</span></p>
+  <div class="btns"><a class="btn ghost" id="ytl" href="https://youtu.be/V679JfIw5YE" target="_blank">▶ YouTube</a><a class="btn ghost" data-href="presentation.html">🎞 <span class="L-en">Animated presentation</span><span class="L-ar">العرض المتحرك</span></a></div></div></div>
 
  <div class="card"><div class="bd">
   <h2><span class="L-en">3 · Resources</span><span class="L-ar">3 · الموارد</span></h2>
   <p><span class="L-en">Everything behind the tool, in one place.</span><span class="L-ar">كل ما وراء الأداة، في مكان واحد.</span></p>
   <ul class="rl">
-   <li><a href="#slides">📄 <span class="L-en">7-slide deck (PDF)</span><span class="L-ar">الشرائح السبع (PDF)</span></a></li>
+   <li><a href="#slides">📄 <span class="L-en">Slides and user guide (PDF)</span><span class="L-ar">الشرائح ودليل الاستخدام (PDF)</span></a></li>
    <li><a href="#data">🛰 <span class="L-en">NASA data we used</span><span class="L-ar">بيانات ناسا المستخدمة</span></a></li>
    <li><a href="#method">∑ <span class="L-en">How it works</span><span class="L-ar">كيف تعمل</span></a></li>
    <li><a href="#validation">✔ <span class="L-en">Validation against NASA</span><span class="L-ar">التحقق مقابل ناسا</span></a></li>
-   <li><a href="#code">⌨ <span class="L-en">Source code (GitHub)</span><span class="L-ar">الكود المصدري (GitHub)</span></a></li>
+   <li><a href="#impact">◎ <span class="L-en">Impact · limits · next steps</span><span class="L-ar">الأثر · الحدود · الخطوات التالية</span></a></li>
+   <li><a href="#team">👥 <span class="L-en">Team · source code</span><span class="L-ar">الفريق · الكود المصدري</span></a></li>
    <li><a href="#ai">ⓘ <span class="L-en">Use of AI · References</span><span class="L-ar">استخدام الذكاء الاصطناعي · المراجع</span></a></li>
   </ul>
   <a class="btn" href="#resources" style="margin-top:12px">📚 <span class="L-en">See resources</span><span class="L-ar">اعرض الموارد</span></a></div></div>
@@ -137,8 +139,8 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 
 <div class="nums">
  <div class="num"><b>18% → 98%</b><span class="L-en">Earth in view at the same site, 16 days apart: start on 2027-09-01 vs 2027-08-16</span><span class="L-ar">رؤية الأرض في الموقع نفسه بفارق 16 يوماً: البدء في 1/9/2027 مقابل 16/8/2027</span></div>
- <div class="num"><b>r = 0.97</b><span class="L-en">agreement with NASA’s annual sunlight map, 300 points computed live</span><span class="L-ar">التطابق مع خريطة ناسا لضوء الشمس السنوي، 300 نقطة تُحسب حياً</span></div>
- <div class="num"><b>0.002°</b><span class="L-en">Sun and Earth geometry vs NASA JPL Horizons</span><span class="L-ar">هندسة الشمس والأرض مقابل NASA JPL Horizons</span></div>
+ <div class="num"><b>r = 0.97</b><span class="L-en">agreement with NASA’s annual sunlight map, 300 points computed live (one run)</span><span class="L-ar">التطابق مع خريطة ناسا لضوء الشمس السنوي، 300 نقطة تُحسب حياً (تشغيل واحد)</span></div>
+ <div class="num"><b>≤ 0.001°</b><span class="L-en">Sun and Earth elevation vs NASA JPL Horizons, 13 dates</span><span class="L-ar">ارتفاع الشمس والأرض مقابل NASA JPL Horizons، 13 تاريخاً</span></div>
 </div>
 </div></div>
 
@@ -148,15 +150,17 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 
 <div class="grid2">
  <div class="box"><h3><span class="L-en">The problem</span><span class="L-ar">المشكلة</span></h3>
-  <p><span class="L-en">At the lunar south pole the Sun never rises: it circles the horizon, never more than about 1.5° high. A lander needs two lines of sight, to the Sun for power and to Earth for its radio link, and a ridge 100 km away can cut either. Commercial (CLPS) landers live about 14 days, so the wrong two weeks can cost the whole mission.</span><span class="L-ar">عند القطب الجنوبي للقمر لا تشرق الشمس: تدور حول الأفق ولا ترتفع أكثر من نحو 1.5°. المركبة تحتاج خطَّي رؤية: إلى الشمس للطاقة، وإلى الأرض للاتصال، وجبل على بعد 100 كم قد يقطع أياً منهما. والمركبات التجارية (CLPS) تعيش نحو 14 يوماً، فالأسبوعان الخطأ قد يكلفان البعثة كلها.</span></p></div>
- <div class="box" id="slides"><h3><span class="L-en">7-slide deck</span><span class="L-ar">الشرائح السبع</span></h3>
-  <p><span class="L-en">Title, problem, solution, how it works, NASA data, results and impact.</span><span class="L-ar">العنوان، المشكلة، الحل، كيف تعمل، بيانات ناسا، النتائج، والأثر.</span></p>
-  <div class="btns" style="margin-top:14px"><a class="btn" href="slides/LUNAR_EXPLORER_7_slides_EN.pdf" target="_blank">📄 English</a><a class="btn ghost" href="slides/LUNAR_EXPLORER_7_slides_AR.pdf" target="_blank">📄 العربية</a></div></div>
+  <p><span class="L-en">At the lunar south pole the Sun never rises: it circles the horizon, never more than about 1.5° high. A lander needs two lines of sight, to the Sun for power and to Earth for its radio link, and a ridge 100 km away can cut either. Commercial (CLPS) landers live about 14 days, so the wrong two weeks can cost the whole mission. In March 2025 the CLPS lander IM-2 (Athena) came to rest on its side in a crater near Mons Mouton; its solar panels could not keep the batteries charged and the mission ended within a day. The tool includes the IM-2 landing area among its seven sites.</span><span class="L-ar">عند القطب الجنوبي للقمر لا تشرق الشمس: تدور حول الأفق ولا ترتفع أكثر من نحو 1.5°. المركبة تحتاج خطَّي رؤية: إلى الشمس للطاقة، وإلى الأرض للاتصال، وجبل على بعد 100 كم قد يقطع أياً منهما. والمركبات التجارية (CLPS) تعيش نحو 14 يوماً، فالأسبوعان الخطأ قد يكلفان البعثة كلها. وفي الشهر 3 من 2025 استقرت مركبة CLPS المسماة IM-2 (Athena) على جانبها داخل فوهة قرب Mons Mouton، ولم تستطع ألواحها الشمسية إبقاء البطاريات مشحونة، فانتهت البعثة خلال يوم. والأداة تضم منطقة هبوط IM-2 ضمن مواقعها السبعة.</span></p></div>
+ <div class="box" id="slides"><h3><span class="L-en">Slides and user guide</span><span class="L-ar">الشرائح ودليل الاستخدام</span></h3>
+  <p><span class="L-en">The 7-slide deck, and a step-by-step user guide with screenshots.</span><span class="L-ar">الشرائح السبع، ودليل استخدام خطوة بخطوة مع صور الشاشة.</span></p>
+  <div class="btns" style="margin-top:12px"><a class="btn" href="slides/LUNAR_EXPLORER_7_slides_EN.pdf" target="_blank">📄 <span class="L-en">Slides · English</span><span class="L-ar">الشرائح · إنكليزي</span></a><a class="btn ghost" href="slides/LUNAR_EXPLORER_7_slides_AR.pdf" target="_blank">📄 <span class="L-en">Slides · Arabic</span><span class="L-ar">الشرائح · عربي</span></a></div>
+  <div class="btns" style="margin-top:10px"><a class="btn" href="guide/LUNAR_EXPLORER_User_Guide_EN.pdf" target="_blank">📘 <span class="L-en">User guide · English</span><span class="L-ar">الدليل · إنكليزي</span></a><a class="btn ghost" href="guide/LUNAR_EXPLORER_User_Guide_AR.pdf" target="_blank">📘 <span class="L-en">User guide · Arabic</span><span class="L-ar">الدليل · عربي</span></a></div>
+  <p class="sm" style="margin-top:10px;color:var(--mut);font-size:14px"><span class="L-en">The guide was written for the previous build; this build adds the ⌂ (project home) and language buttons and opens in English.</span><span class="L-ar">كُتب الدليل للنسخة السابقة؛ وهذه النسخة تضيف زرّي ⌂ (الصفحة الرئيسية) واللغة، وتفتح بالإنكليزية.</span></p></div>
 </div>
 
 <div class="box" id="data" style="margin-top:22px"><h3><span class="L-en">NASA data we used</span><span class="L-ar">بيانات ناسا المستخدمة</span></h3>
 <table><tr><th><span class="L-en">Dataset</span><span class="L-ar">البيانات</span></th><th><span class="L-en">Mission</span><span class="L-ar">البعثة</span></th><th><span class="L-en">Used for</span><span class="L-ar">استُخدمت في</span></th></tr>
-<tr><td><a href="https://imbrium.mit.edu/DATA/LOLA_GDR/POLAR/IMG/" target="_blank">LOLA LDEM_80S_80M</a> · 80 m</td><td>LRO · LOLA</td><td><span class="L-en">terrain horizons, slope, relief, rover routes</span><span class="L-ar">أفق التضاريس، الميل، التضاريس، مسارات العربة</span></td></tr>
+<tr><td><a href="https://imbrium.mit.edu/DATA/LOLA_GDR/POLAR/IMG/" target="_blank">LOLA LDEM_80S_80M</a> · 80 m</td><td>LRO · LOLA</td><td><span class="L-en">horizons of the seven named sites at 80 m; a 240 m grid built from it for the map, slope, rover routes and points you pick</span><span class="L-ar">أفق المواقع السبعة المسمّاة بدقة 80 م؛ وشبكة 240 م مبنية منها للخريطة والميل ومسارات العربة والنقاط التي تختارها</span></td></tr>
 <tr><td><a href="https://ssd.jpl.nasa.gov/horizons/" target="_blank">JPL Horizons</a> · <span class="L-en">hourly, 2027–2028</span><span class="L-ar">كل ساعة، 2027–2028</span></td><td>NASA/JPL</td><td><span class="L-en">Sun and Earth positions and distances</span><span class="L-ar">موقع الشمس والأرض وبعدهما</span></td></tr>
 <tr><td><a href="https://pgda.gsfc.nasa.gov/products/69" target="_blank">LOLA polar illumination</a> · AVGVISIB, LPSR · 240 m</td><td>NASA GSFC PGDA</td><td><span class="L-en">map layers, ice-stability index, and the yardstick for our results</span><span class="L-ar">طبقات الخريطة، مؤشر استقرار الجليد، ومقياس نتائجنا</span></td></tr></table></div>
 
@@ -172,26 +176,37 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
   <tr><td><span class="L-en">Solar power</span><span class="L-ar">قدرة الألواح</span></td><td class="eq">P = 1361 (1 AU/r)² η A f</td></tr>
   <tr><td><span class="L-en">Survival battery</span><span class="L-ar">بطارية البقاء</span></td><td class="eq">E = P<sub>survive</sub> · t<sub>dark</sub></td></tr></table></div>
  <div class="box" id="validation"><h3><span class="L-en">Validation against NASA</span><span class="L-ar">التحقق مقابل ناسا</span></h3>
-  <ul><li><span class="L-en"><b>Live check, 300 random points</b> vs NASA’s annual sunlight map: r = 0.966, mean difference 3.7 points, 92% within ±10; our tool is slightly conservative (−3.5).</span><span class="L-ar"><b>تحقق حي على 300 نقطة عشوائية</b> مقابل خريطة ناسا لضوء الشمس السنوي: ارتباط 0.966، ومتوسط فرق 3.7 نقطة، و92% ضمن ±10؛ وأداتنا أكثر تحفظاً قليلاً (−3.5).</span></li>
+  <ul><li><span class="L-en"><b>Live check, 300 random points</b> vs NASA’s annual sunlight map (one run; each run draws new points, so the numbers vary slightly): r = 0.966, mean difference 3.7 points, 92% within ±10; our tool is slightly conservative (−3.5).</span><span class="L-ar"><b>تحقق حي على 300 نقطة عشوائية</b> مقابل خريطة ناسا لضوء الشمس السنوي (تشغيل واحد؛ كل تشغيل يسحب نقاطاً جديدة فتتغير الأرقام قليلاً): ارتباط 0.966، ومتوسط فرق 3.7 نقطة، و92% ضمن ±10؛ وأداتنا أكثر تحفظاً قليلاً (−3.5).</span></li>
   <li><span class="L-en"><b>Full map, 1.1 million cells:</b> r = 0.987, mean difference 3.0 points; permanent-shadow overlap 99.9%.</span><span class="L-ar"><b>الخريطة كاملة، 1.1 مليون خلية:</b> ارتباط 0.987، ومتوسط فرق 3.0 نقطة؛ وتطابق الظل الدائم 99.9%.</span></li>
-  <li><span class="L-en"><b>Sun and Earth geometry</b> vs JPL Horizons: maximum difference 0.002°.</span><span class="L-ar"><b>هندسة الشمس والأرض</b> مقابل JPL Horizons: أقصى فرق 0.002°.</span></li></ul>
+  <li><span class="L-en"><b>Sun and Earth geometry</b> vs JPL Horizons computed from the lunar surface, 13 dates: elevation within 0.001°, azimuth within 0.01°.</span><span class="L-ar"><b>هندسة الشمس والأرض</b> مقابل JPL Horizons المحسوب من سطح القمر، 13 تاريخاً: الارتفاع بفارق لا يتجاوز 0.001°‎، والسمت بفارق لا يتجاوز 0.01°‎.</span></li></ul>
   <p class="note"><span class="L-en">NASA’s map is itself a model built from LOLA terrain. Agreement shows our method is implemented correctly; it does not, alone, prove ground truth.</span><span class="L-ar">خريطة ناسا نفسها نموذج مبني من تضاريس LOLA. التطابق يثبت صحة تنفيذ طريقتنا، ولا يثبت وحده الحقيقة الأرضية.</span></p>
   <div class="btns" style="margin-top:12px"><a class="btn ghost" href="validation/validation_300_points.csv" download>⬇ <span class="L-en">300-point data (CSV)</span><span class="L-ar">بيانات النقاط الـ300 (CSV)</span></a></div></div>
 </div>
 
-<div class="grid2" style="margin-top:22px">
+<div class="grid2" style="margin-top:22px" id="impact">
+ <div class="box"><h3><span class="L-en">Impact and next steps</span><span class="L-ar">الأثر والخطوات التالية</span></h3>
+  <ul><li><span class="L-en"><b>Mission planners and CLPS teams:</b> compare sites and start dates in minutes, and see the longest darkness and link outage before they become a failed mission.</span><span class="L-ar"><b>مخططو البعثات وفرق CLPS:</b> قارن المواقع وتواريخ البدء في دقائق، وشاهد أطول ظلام وأطول انقطاع قبل أن يصيرا بعثة فاشلة.</span></li>
+  <li><span class="L-en"><b>Students and teachers:</b> one offline file in Arabic and English; every term and every law is explained on click.</span><span class="L-ar"><b>الطلاب والمعلمون:</b> ملف واحد يعمل بلا إنترنت بالعربية والإنكليزية؛ وكل مصطلح وكل قانون يُشرح بنقرة.</span></li>
+  <li><span class="L-en"><b>Reviewers and researchers:</b> the data lineage, the law and the confidence behind every number; the comparison with NASA is exportable.</span><span class="L-ar"><b>المراجعون والباحثون:</b> نسب البيانات والقانون والثقة وراء كل رقم؛ والمقارنة مع ناسا قابلة للتصدير.</span></li>
+  <li><span class="L-en"><b>Next:</b> Diviner temperature and LEND hydrogen for a measured ice layer, comparison with real shadow images, relay satellites, the north pole and crewed sorties.</span><span class="L-ar"><b>التالي:</b> حرارة Diviner وهيدروجين LEND لطبقة جليد مقيسة، ومقارنة بصور حقيقية للظلال، وسواتل الترحيل، والقطب الشمالي، وطلعات الطواقم.</span></li></ul></div>
  <div class="box"><h3><span class="L-en">Limits, stated plainly</span><span class="L-ar">الحدود بوضوح</span></h3>
   <ul><li><span class="L-en">Water ice is unconfirmed anywhere; our ice index is geometric.</span><span class="L-ar">الجليد غير مؤكد في أي مكان؛ ومؤشرنا هندسي.</span></li>
   <li><span class="L-en">Reflected light is not modelled; features smaller than a grid cell are invisible.</span><span class="L-ar">الضوء المنعكس غير محسوب؛ والمعالم الأصغر من خلية الشبكة غير مرئية.</span></li>
   <li><span class="L-en">Terrain data end at 80°S; vehicle values are editable assumptions.</span><span class="L-ar">بيانات التضاريس تنتهي عند 80° جنوباً؛ وقيم المركبة افتراضات قابلة للتعديل.</span></li></ul></div>
- <div class="box" id="code"><h3><span class="L-en">Source code</span><span class="L-ar">الكود المصدري</span></h3>
-  <p><span class="L-en">The tool, the Python data-preparation scripts, the README and the license (MIT) are on GitHub.</span><span class="L-ar">الأداة وسكربتات Python لتجهيز البيانات وملف README والترخيص (MIT) على GitHub.</span></p>
-  <div class="btns" style="margin-top:14px"><a class="btn" href="https://github.com/basilsltan62-del/lunar-explorer" target="_blank">⌨ <span class="L-en">Open on GitHub</span><span class="L-ar">افتح على GitHub</span></a></div></div>
 </div>
 
-<div class="grid2" style="margin-top:22px">
+<div class="grid2" style="margin-top:22px" id="team">
+ <div class="box" id="code"><h3><span class="L-en">Team DexLab 1 · Jazan, Saudi Arabia · team 25</span><span class="L-ar">فريق DexLab 1 · جازان، المملكة العربية السعودية · الفريق 25</span></h3>
+  <ul><li><b>Azez Hana</b> · <span class="L-en">team leader and scientific supervision; UX and testing</span><span class="L-ar">قائد الفريق والإشراف العلمي؛ تجربة المستخدم والاختبار</span></li>
+  <li><b>Francisco Acousta</b> · <span class="L-en">video, voice-over and design; UX and testing</span><span class="L-ar">الفيديو والتعليق الصوتي والتصميم؛ تجربة المستخدم والاختبار</span></li>
+  <li><b>Dominico Acousta</b> · <span class="L-en">video, voice-over and design; UX and testing</span><span class="L-ar">الفيديو والتعليق الصوتي والتصميم؛ تجربة المستخدم والاختبار</span></li></ul>
+  <p><span class="L-en">The tool, the Python data-preparation scripts, the README and the license (MIT) are on GitHub.</span><span class="L-ar">الأداة وسكربتات Python لتجهيز البيانات وملف README والترخيص (MIT) على GitHub.</span></p>
+  <div class="btns" style="margin-top:14px"><a class="btn" href="https://github.com/basilsltan62-del/lunar-explorer" target="_blank">⌨ <span class="L-en">Source code on GitHub</span><span class="L-ar">الكود المصدري على GitHub</span></a></div></div>
  <div class="box" id="ai"><h3><span class="L-en">Use of AI</span><span class="L-ar">استخدام الذكاء الاصطناعي</span></h3>
-  <p><span class="L-en">AI tool used: Claude (Anthropic). It helped write and debug the code and the data-preparation scripts, and helped draft the texts, translations and presentation materials. Team DexLab chose the challenge and the questions, made the design decisions, tested the tool across its versions and reviewed its numbers and texts. Every result in the tool is computed from NASA data by the code in the repository.</span><span class="L-ar">أداة الذكاء الاصطناعي المستخدمة: Claude من Anthropic. ساعدت في كتابة الكود وسكربتات تجهيز البيانات وتصحيحها، وفي صياغة النصوص والترجمة ومواد العرض. واختار فريق DexLab التحدي والأسئلة، واتخذ قرارات التصميم، واختبر الأداة عبر نسخها، وراجع أرقامها ونصوصها. وكل نتيجة في الأداة محسوبة من بيانات ناسا بالكود الموجود في المستودع.</span></p></div>
+  <p><span class="L-en">AI tool used: Claude (Anthropic). It helped write and debug the code and the data-preparation scripts, and helped draft the texts, translations and presentation materials. Team DexLab 1 chose the challenge and the questions, made the design decisions, tested the tool across its versions and reviewed its numbers and texts. Every result in the tool is computed from NASA data by the code in the repository.</span><span class="L-ar">أداة الذكاء الاصطناعي المستخدمة: Claude من Anthropic. ساعدت في كتابة الكود وسكربتات تجهيز البيانات وتصحيحها، وفي صياغة النصوص والترجمة ومواد العرض. واختار فريق DexLab 1 التحدي والأسئلة، واتخذ قرارات التصميم، واختبر الأداة عبر نسخها، وراجع أرقامها ونصوصها. وكل نتيجة في الأداة محسوبة من بيانات ناسا بالكود الموجود في المستودع.</span></p></div>
+</div>
+
+<div style="margin-top:22px">
  <div class="box"><h3><span class="L-en">References</span><span class="L-ar">المراجع</span></h3>
   <ol class="refs">
   <li>Smith, D. E., et al. (2010). The Lunar Orbiter Laser Altimeter investigation on the LRO mission. <i>Space Sci. Rev.</i> 150, 209–241. <a href="https://ui.adsabs.harvard.edu/abs/2010SSRv..150..209S/abstract" target="_blank">ADS</a></li>
@@ -203,21 +218,21 @@ footer .wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between}
 </div>
 </div></section>
 
-<footer><div class="wrap"><span><b style="color:#fff">LUNAR EXPLORER</b> · <span class="L-en">Team DexLab · Jazan, Saudi Arabia · NASA Space Apps Challenge 2026</span><span class="L-ar">فريق DexLab · جازان، المملكة العربية السعودية · تحدي ناسا Space Apps 2026</span></span><span><span class="L-en">Code: MIT · NASA data: public domain</span><span class="L-ar">الكود: MIT · بيانات ناسا: ملكية عامة</span></span></div></footer>
+<footer><div class="wrap"><span><b style="color:#fff">LUNAR EXPLORER</b> · <span class="L-en">Team DexLab 1 · Jazan, Saudi Arabia · team 25 · NASA Space Apps Challenge 2026</span><span class="L-ar">فريق DexLab 1 · جازان، المملكة العربية السعودية · الفريق 25 · تحدي ناسا Space Apps 2026</span></span><span><span class="L-en">Code: MIT · NASA data: public domain</span><span class="L-ar">الكود: MIT · بيانات ناسا: ملكية عامة</span></span></div></footer>
 
 <script>
 (function(){
-  var L='en';
+  var L='en',V='V679JfIw5YE';
   try{var q=new URLSearchParams(location.search).get('lang');if(q==='en'||q==='ar')L=q;else{var s=localStorage.getItem('lxh-lang');if(s==='en'||s==='ar')L=s;}}catch(e){}
-  var v=document.getElementById('fv'),pl=document.getElementById('pl'),dl=document.getElementById('dl');
-  function film(l){var src='film/LUNAR_EXPLORER_30s_'+(l==='ar'?'AR':'EN')+'.mp4';if(v.getAttribute('data-src')!==src){v.pause();v.setAttribute('data-src',src);v.removeAttribute('src');v.load();v.poster='assets/poster_'+l+'.jpg';pl.style.display='';}dl.href=src;dl.setAttribute('download',src.split('/').pop());}
+  var img=document.getElementById('ytimg'),f=document.getElementById('ytf'),pl=document.getElementById('pl');
+  img.src='https://i.ytimg.com/vi/'+V+'/hqdefault.jpg';
+  var MOB=false;try{MOB=matchMedia('(pointer:coarse)').matches}catch(e){}
+  pl.onclick=function(){if(MOB){window.open('https://youtu.be/'+V,'_blank','noopener');return}f.src='https://www.youtube-nocookie.com/embed/'+V+'?autoplay=1&rel=0';f.hidden=false;img.hidden=true;pl.style.display='none'};
   function set(l){L=l;var h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';
     document.querySelectorAll('.lg button').forEach(function(b){b.classList.toggle('on',b.dataset.l===l)});
-    document.querySelectorAll('[data-href]').forEach(function(a){a.href=a.dataset.href+'?lang='+l});
-    film(l);try{localStorage.setItem('lxh-lang',l)}catch(e){}}
+    document.querySelectorAll('[data-href]').forEach(function(a){a.href=a.dataset.href+'?lang='+l+(a.dataset.q?'&'+a.dataset.q:'')});
+    try{localStorage.setItem('lxh-lang',l)}catch(e){}}
   document.querySelectorAll('.lg button').forEach(function(b){b.onclick=function(){set(b.dataset.l)}});
-  pl.onclick=function(){if(!v.getAttribute('src'))v.src=v.getAttribute('data-src');pl.style.display='none';v.play().catch(function(){})};
-  v.addEventListener('play',function(){pl.style.display='none'});
   set(L);
 })();
 </script>

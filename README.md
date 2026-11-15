@@ -2,28 +2,24 @@
 
 **Where, and when, to land at the Moon's south pole.**
 
-NASA Space Apps Challenge 2026 · Challenge: *CLPS Lunar Mission Browser* · **Team DexLab** · Jazan, Saudi Arabia
+NASA Space Apps Challenge 2026 · Challenge: *CLPS Lunar Mission Browser* · **Team DexLab 1** · Jazan, Saudi Arabia · team 25
 
 | | |
 |---|---|
-| 🏠 **Project home** (start here: tool, film and resources) | https://basilsltan62-del.github.io/lunar-explorer/ |
+| 🏠 **Project home** (start here: tool, video and resources) | https://basilsltan62-del.github.io/lunar-explorer/ |
 | ▶ **Open the tool** | https://basilsltan62-del.github.io/lunar-explorer/app/ |
-| 🎬 **30-second film** | [English](film/LUNAR_EXPLORER_30s_EN.mp4) · [Arabic, with English subtitles](film/LUNAR_EXPLORER_30s_AR.mp4) |
+| 🎯 **Guided demo** (5 steps inside the tool) | https://basilsltan62-del.github.io/lunar-explorer/app/?demo=1 |
+| 🎬 **Project video** | https://youtu.be/V679JfIw5YE |
 | 🎞 **Animated presentation** (14 scenes, voice-over script) | https://basilsltan62-del.github.io/lunar-explorer/presentation.html |
 | 📄 **7 slides** | [English (PDF)](slides/LUNAR_EXPLORER_7_slides_EN.pdf) · [Arabic (PDF)](slides/LUNAR_EXPLORER_7_slides_AR.pdf) |
-| 📊 **Validation data** | [validation/validation_300_points.csv](validation/validation_300_points.csv) |
-
----|---|
-| ▶ **Open the tool** | https://basilsltan62-del.github.io/lunar-explorer/ |
-| 🎬 **Presentation** (14 animated scenes + 30-second film) | https://basilsltan62-del.github.io/lunar-explorer/presentation.html |
-| 📄 **7 slides** | [English (PDF)](slides/LUNAR_EXPLORER_7_slides_EN.pdf) · [Arabic (PDF)](slides/LUNAR_EXPLORER_7_slides_AR.pdf) |
+| 📘 **User guide** | [English (PDF)](guide/LUNAR_EXPLORER_User_Guide_EN.pdf) · [Arabic (PDF)](guide/LUNAR_EXPLORER_User_Guide_AR.pdf) |
 | 📊 **Validation data** | [validation/validation_300_points.csv](validation/validation_300_points.csv) |
 
 ---
 
 ## The problem
 
-At the lunar south pole the Sun never rises: it circles the horizon, never more than about 1.5° high. A lander there needs two lines of sight: one to the Sun for power, one to Earth for its radio link. A ridge 100 km away can cut either, and Earth itself rises and sets over a cycle of about 27 days. Commercial (CLPS) landers live about 14 days, so choosing the wrong two weeks can cost the whole mission.
+At the lunar south pole the Sun never rises: it circles the horizon, never more than about 1.5° high. A lander there needs two lines of sight: one to the Sun for power, one to Earth for its radio link. A ridge 100 km away can cut either, and Earth itself rises and sets over a cycle of about 27 days. Commercial (CLPS) landers live about 14 days, so choosing the wrong two weeks can cost the whole mission. In March 2025 the CLPS lander IM-2 (Athena) came to rest on its side in a crater near Mons Mouton; its solar panels could not keep the batteries charged and the mission ended within a day. The tool includes the IM-2 landing area among its seven named sites.
 
 ## What the tool does
 
@@ -54,7 +50,7 @@ The tool is one self-contained HTML file: it works **offline** (download `app/in
 
 | Dataset | Mission / instrument | Used for |
 |---|---|---|
-| LOLA polar elevation model **LDEM_80S_80M** (80 m) [1][5] | Lunar Reconnaissance Orbiter · LOLA laser altimeter | horizons, slope, relief, rover routes |
+| LOLA polar elevation model **LDEM_80S_80M** (80 m) [1][5] | Lunar Reconnaissance Orbiter · LOLA laser altimeter | horizons of the seven named sites at 80 m; a 240 m grid built from it for the map, slope, rover routes and points you pick |
 | **JPL Horizons** ephemeris, hourly, 2027–2028 [2] | NASA/JPL Solar System Dynamics | Sun and Earth positions and distances |
 | LOLA team **polar illumination products**: AVGVISIB, AVGVISIB_EARTH, LPSR (240 m) [3][4] | NASA GSFC Planetary Geodesy Data Archive | map layers, ice-stability index, and the yardstick for our own results |
 
@@ -76,9 +72,9 @@ Rover routes use A* search over slope and illumination. Tools: Python (NumPy, Sc
 
 | Check | Result |
 |---|---|
-| Live check, 300 random points vs NASA's annual sunlight map (one run, data in `validation/`) | correlation r = 0.966 · mean absolute difference 3.7 points · bias −3.5 (our tool is slightly conservative) · 92% of points within ±10 |
+| Live check, 300 random points vs NASA's annual sunlight map (one run, data in `validation/`; each run draws new points, so the numbers vary slightly) | correlation r = 0.966 · mean absolute difference 3.7 points · bias −3.5 (our tool is slightly conservative) · 92% of points within ±10 |
 | Full map, 1.1 million cells | correlation r = 0.987 · mean difference 3.0 points · permanent-shadow overlap 99.9% |
-| Sun and Earth geometry vs JPL Horizons | maximum difference 0.002° |
+| Sun and Earth geometry vs JPL Horizons computed from the lunar surface, 13 dates | elevation within 0.001° · azimuth within 0.01° |
 
 **Caveat:** NASA's illumination map is itself a model built from LOLA terrain. Agreement shows that our method is implemented correctly; it does not, on its own, prove ground truth.
 
@@ -92,28 +88,33 @@ Rover routes use A* search over slope and illumination. Tools: Python (NumPy, Sc
 
 **Next:** Diviner temperature and LEND hydrogen data for a measured ice layer, comparison with real shadow images, relay satellites and the north pole, crewed sorties and Artemis candidate regions.
 
+The user guide was written for the previous build; this build adds the ⌂ (project home) and language buttons and opens in English.
+
 ## Repository contents
 
 | Path | Content |
 |---|---|
-| `index.html` | project home page: tool, film and resources (English, with Arabic) |
+| `index.html` | project home page: tool, video and resources (English, with Arabic) |
 | `app/index.html` | the tool (single self-contained file; opens in English, Arabic from the EN/ع button) |
-| `presentation.html` | animated presentation with Arabic/English toggle, voice-over script and the 30-second film |
-| `film/` | the 30-second film, English and Arabic (MP4, captioned, no sound) |
-| `slides/` | the 7-slide deck, English and Arabic (PDF) |
+| `presentation.html` | animated presentation with Arabic/English toggle, voice-over script and the project video |
+| `slides/`, `guide/` | the 7-slide deck and the user guide, English and Arabic (PDF) |
 | `validation/` | 300-point comparison with NASA's map (CSV) |
 | `src/tool/` | source of the tool (JavaScript, CSS) and the build script |
 | `src/data-prep/` | Python scripts that read the NASA data and prepare the tool's data |
 
 ## Use of AI
 
-AI tool used: **Claude (Anthropic)**. It helped write and debug the code and the data-preparation scripts, and helped draft the texts, translations and presentation materials (slides, animated presentation, 30-second film).
+AI tool used: **Claude (Anthropic)**. It helped write and debug the code and the data-preparation scripts, and helped draft the texts, translations and presentation materials (slides, animated presentation).
 
-Team DexLab chose the challenge and the questions, made the design decisions, tested the tool across its versions and reviewed its numbers and texts. Every result in the tool is computed from NASA data by the code in this repository.
+Team DexLab 1 chose the challenge and the questions, made the design decisions, tested the tool across its versions and reviewed its numbers and texts. Every result in the tool is computed from NASA data by the code in this repository.
 
 ## Team
 
-**Team DexLab** · Jazan, Saudi Arabia · NASA Space Apps Challenge 2026
+**Team DexLab 1** · Jazan, Saudi Arabia · team 25 · NASA Space Apps Challenge 2026
+
+- **Azez Hana**: team leader and scientific supervision; UX and testing
+- **Francisco Acousta**: video, voice-over and design; UX and testing
+- **Dominico Acousta**: video, voice-over and design; UX and testing
 
 ## License
 
@@ -130,4 +131,4 @@ Code: MIT (see `LICENSE`). NASA data are in the public domain; images in this re
 
 ---
 
-**بالعربية:** LUNAR EXPLORER أداة لتخطيط البعثات عند القطب الجنوبي للقمر. تحسب الأفق الحقيقي لأي نقطة من بيانات ناسا، وترصد الشمس والأرض ساعة بساعة، وتحوّل ذلك إلى قرار، وتختبر نفسها مقابل خرائط ناسا المنشورة. تعمل بالعربية والإنكليزية وبلا إنترنت. فريق DexLab · جازان، المملكة العربية السعودية.
+**بالعربية:** LUNAR EXPLORER أداة لتخطيط البعثات عند القطب الجنوبي للقمر. تحسب الأفق الحقيقي لأي نقطة من بيانات ناسا، وترصد الشمس والأرض ساعة بساعة، وتحوّل ذلك إلى قرار، وتختبر نفسها مقابل خرائط ناسا المنشورة. تعمل بالعربية والإنكليزية وبلا إنترنت. فريق DexLab 1 · جازان، المملكة العربية السعودية.
