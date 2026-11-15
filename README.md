@@ -73,7 +73,7 @@ Rover routes use A* search over slope and illumination. Tools: Python (NumPy, Sc
 | Check | Result |
 |---|---|
 | Live check, 300 random points vs NASA's annual sunlight map (one run, data in `validation/`; each run draws new points, so the numbers vary slightly) | correlation r = 0.966 · mean absolute difference 3.7 points · bias −3.5 (our tool is slightly conservative) · 92% of points within ±10 |
-| Full map, 1.1 million cells | correlation r = 0.987 · mean difference 3.0 points · permanent-shadow overlap 99.9% |
+| Full map, 1.1 million cells | correlation r = 0.987 · mean difference 3.0 points · 99.9% of NASA's mapped permanent shadow falls inside ours (ours is larger, so the tool errs on the dark side) |
 | Sun and Earth geometry vs JPL Horizons computed from the lunar surface, 13 dates | elevation within 0.001° · azimuth within 0.01° |
 
 **Caveat:** NASA's illumination map is itself a model built from LOLA terrain. Agreement shows that our method is implemented correctly; it does not, on its own, prove ground truth.
