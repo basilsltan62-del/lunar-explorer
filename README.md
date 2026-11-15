@@ -6,6 +6,14 @@ NASA Space Apps Challenge 2026 · Challenge: *CLPS Lunar Mission Browser* · **T
 
 | | |
 |---|---|
+| 🏠 **Project home** (start here: tool, film and resources) | https://basilsltan62-del.github.io/lunar-explorer/ |
+| ▶ **Open the tool** | https://basilsltan62-del.github.io/lunar-explorer/app/ |
+| 🎬 **30-second film** | [English](film/LUNAR_EXPLORER_30s_EN.mp4) · [Arabic, with English subtitles](film/LUNAR_EXPLORER_30s_AR.mp4) |
+| 🎞 **Animated presentation** (14 scenes, voice-over script) | https://basilsltan62-del.github.io/lunar-explorer/presentation.html |
+| 📄 **7 slides** | [English (PDF)](slides/LUNAR_EXPLORER_7_slides_EN.pdf) · [Arabic (PDF)](slides/LUNAR_EXPLORER_7_slides_AR.pdf) |
+| 📊 **Validation data** | [validation/validation_300_points.csv](validation/validation_300_points.csv) |
+
+---|---|
 | ▶ **Open the tool** | https://basilsltan62-del.github.io/lunar-explorer/ |
 | 🎬 **Presentation** (14 animated scenes + 30-second film) | https://basilsltan62-del.github.io/lunar-explorer/presentation.html |
 | 📄 **7 slides** | [English (PDF)](slides/LUNAR_EXPLORER_7_slides_EN.pdf) · [Arabic (PDF)](slides/LUNAR_EXPLORER_7_slides_AR.pdf) |
@@ -40,7 +48,7 @@ For any point you click and any start date, LUNAR EXPLORER:
 2. **Read the decision board.** Tap any tile to see how its number was computed.
 3. **Ask "What should I do?"** for a better date or site, plan a route, or run the live check against NASA.
 
-The tool is one self-contained HTML file: it works **offline** (download `index.html` and open it in any modern browser), on desktop and phone, in **Arabic and English**. No server, no sign-in.
+The tool is one self-contained HTML file: it works **offline** (download `app/index.html` and open it in any modern browser), on desktop and phone, in **Arabic and English**. No server, no sign-in.
 
 ## NASA data
 
@@ -88,8 +96,10 @@ Rover routes use A* search over slope and illumination. Tools: Python (NumPy, Sc
 
 | Path | Content |
 |---|---|
-| `index.html` | the tool (single self-contained file) |
+| `index.html` | project home page: tool, film and resources (English, with Arabic) |
+| `app/index.html` | the tool (single self-contained file; opens in English, Arabic from the EN/ع button) |
 | `presentation.html` | animated presentation with Arabic/English toggle, voice-over script and the 30-second film |
+| `film/` | the 30-second film, English and Arabic (MP4, captioned, no sound) |
 | `slides/` | the 7-slide deck, English and Arabic (PDF) |
 | `validation/` | 300-point comparison with NASA's map (CSV) |
 | `src/tool/` | source of the tool (JavaScript, CSS) and the build script |
